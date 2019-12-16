@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>快捷巴士</title>
+    <meta name="format-detection" content="telephone=no, email=no">
+    <link rel="stylesheet" href="http://resources.hollo.cn/20171025181256/styles/app.css?v=20171102134115">
+    <link rel="stylesheet" href="http://resources.hollo.cn/20171025181256/bower_components/dropload/dist/dropload.css">
+    <link rel="stylesheet" href="http://resources.hollo.cn/20171025181256/styles/red_packet.css">
+    <link rel="stylesheet" href="http://resources.hollo.cn/20171025181256/styles/animate.min.css">
+
+    <style id="__WXWORK_INNER_SCROLLBAR_CSS">
+        ::-webkit-scrollbar {
+            width: 12px !important;
+            height: 12px !important;
+        }
+
+        ::-webkit-scrollbar-track:vertical {}
+
+        ::-webkit-scrollbar-thumb:vertical {
+            background-color: rgba(136, 141, 152, 0.5) !important;
+            border-radius: 10px !important;
+            background-clip: content-box !important;
+            border: 2px solid transparent !important;
+        }
+
+        ::-webkit-scrollbar-track:horizontal {}
+
+        ::-webkit-scrollbar-thumb:horizontal {
+            background-color: rgba(136, 141, 152, 0.5) !important;
+            border-radius: 10px !important;
+            background-clip: content-box !important;
+            border: 2px solid transparent !important;
+        }
+
+        ::-webkit-resizer {
+            display: none !important;
+        }
+    </style>
+
+
+    <link rel="stylesheet" href="http://resources.hollo.cn/20171025181256/bower_components/swiper/dist/css/swiper.min.css">
+    <script type="text/javascript" charset="utf-8" src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body class="">
+
+
+    <main id="page" style="padding-bottom: 60px;">
+
+        <a href="/shuttle-map" style="right: 0;" data-replace="true" class="shuttle-switch-map-btn js_location_url"></a>
+        <div id="js_drop_load_area">
+            <div class="shuttle-list" id="list">
+                <div class="shuttle-item  animated fadeInUp  ant-delay-1" data-id="591bfb2a6b237575468b5138">
+                    <div class="shuttle-header clearfix">
+                        <span class="code" id="code-no">K206 </span>
+                        <p class="name" id="code-name">IT产业园--将台地铁 </p>
+
+                    </div>
+                    <div class="shuttle-body">
+                        <div class="item-bd">
+                            <h4 class="bd-tt" id="code-time">运营时间：17:30-19:30 </h4>
+                            <div class="bd-txt">票价：<span class="price">2.99元</span></div>
+                        </div>
+                        <div class="item-right">
+
+                            <button class="btn btn-primary full-width btn-s js_buy_btn">购买车票</button>
+
+                        </div>
+                    </div>
+ 
+                </div>
+
+                <div class="shuttle-item  animated fadeInUp  ant-delay-2" data-id="591bf9616b237575468b5137">
+                    <div class="shuttle-header clearfix">
+                        <span class="code">K205 </span>
+                        <p class="name">将台地铁--IT产业园 </p>
+
+                    </div>
+                    <div class="shuttle-body">
+                        <div class="item-bd">
+                            <h4 class="bd-tt">运营时间：08:00-10:00 </h4>
+                            <div class="bd-txt">票价：<span class="price">2.99元</span></div>
+                        </div>
+                        <div class="item-right">
+
+                            <button class="btn btn-primary full-width btn-s disabled js_disabled_btn">暂未运营</button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shuttle-item  animated fadeInUp  ant-delay-3" data-id="59ba4c5f6b2375553b8cd2fd">
+                    <div class="shuttle-header clearfix">
+                        <span class="code">K207 </span>
+                        <p class="name">将台地铁C口---电子城创E+ </p>
+
+                    </div>
+                    <div class="shuttle-body">
+                        <div class="item-bd">
+                            <h4 class="bd-tt">运营时间：08:30-10:00 </h4>
+                            <div class="bd-txt">票价：<span class="price">2.99元</span></div>
+                        </div>
+                        <div class="item-right">
+
+                            <button class="btn btn-primary full-width btn-s disabled js_disabled_btn">暂未运营</button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shuttle-item  animated fadeInUp  ant-delay-4" data-id="5c2c502e6b2375593f8cc120">
+                    <div class="shuttle-header clearfix">
+                        <span class="code">YDKJ-01 </span>
+                        <p class="name">燕东科技早班车 </p>
+
+                    </div>
+                    <div class="shuttle-body">
+                        <div class="item-bd">
+                            <h4 class="bd-tt">运营时间：07:00-08:00 </h4>
+                            <div class="bd-txt">票价：<span class="price">0元</span></div>
+                        </div>
+                        <div class="item-right">
+
+                            <button class="btn btn-primary full-width btn-s disabled js_disabled_btn">暂未运营</button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shuttle-item  animated fadeInUp  ant-delay-5" data-id="5c2c510f6b2375603f8dc0c2">
+                    <div class="shuttle-header clearfix">
+                        <span class="code">YDKJ-02 </span>
+                        <p class="name">燕东科技晚班车 </p>
+
+                    </div>
+                    <div class="shuttle-body">
+                        <div class="item-bd">
+                            <h4 class="bd-tt">运营时间：17:00-18:00 </h4>
+                            <div class="bd-txt">票价：<span class="price">0元</span></div>
+                        </div>
+                        <div class="item-right">
+
+                            <button class="btn btn-primary full-width btn-s disabled js_disabled_btn">暂未运营</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="text-center btn-primary full-width mt-10 loading-more gone"></button>
+        </div>
+    </main>
+    <a href="javascript:void(0);" class="shuttle-quick-btn  js_show_all_ticket_btn active">车票</a>
+
+
+    <div class="gone" id="js_location_data" data-info="{&quot;lng&quot;:116.501,&quot;lat&quot;:39.9848}"></div>
+    <section class="dialog-wrap " id="js_ticket_modal">
+
+        <div class="overlay"></div>
+        <div class="dialog-content">
+            <div class="dialog-header ">
+                <h3 class="text-center tk-dialog-header">
+
+                    &nbsp;
+                    <span class="close js_close_btn">关闭</span>
+                </h3>
+            </div>
+            <div class="dialog tk-dialog">
+                <ul class="show-ticket-list" id="js_ticket_list">
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="dialog-wrap  active" id="js_ticket_list_modal">
+
+        <div class="overlay"></div>
+        <div class="dialog-content">
+            <div class="dialog-header ">
+                <h3 class="text-center tk-dialog-header">
+                    我的票夹
+                    <span class="close js_close_btn">关闭</span>
+                </h3>
+            </div>
+            <div class="dialog tk-list-dialog ">
+                <div class="swiper-ticket-container swiper-container-horizontal" style="width: 100%">
+                    <div class="show-ticket-list swiper-wrapper" id="js_ticket_list" style="transform: 0; display: flex;justify-content: center;transition-duration: 0ms;">
+                        <div class="stl-item swiper-slide active swiper-slide-active" id="js_ticket_5df20f3ac900a710cf45dbc2">
+                            <div class="js_style_section">
+                                <style type="text/css">
+                                    #js_ticket_5df20f3ac900a710cf45dbc2 .js_before_after:after,
+                                    #js_ticket_5df20f3ac900a710cf45dbc2 .js_before_after:before {
+                                        background: radial-gradient(circle, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 50%, #3795df 50%, #3795df) !important;
+                                    }
+                                </style>
+                            </div>
+                            <header class="tk-header bg-color-transition">
+                                <div class="thh-content">
+                                    <p class="code " id="hl-day">12月12日</p>
+                                    <p class="name " id="hl-time">17:30-19:30 </p>
+                                </div>
+                                <span class="tk-checked js_bg_checked_color" data-title="已验票"></span>
+                            </header>
+                            <article class="tk-body js_bg_color " style="background-color: rgb(55, 149, 223);">
+                                <p class="date hl-no">K206</p>
+                                <p class="date-title info">票价2.99元</p>
+                            </article>
+                            <p class="tk-gap js_bg_color js_before_after" style="background-color: rgb(55, 149, 223);"> <span class="line"></span> </p>
+                            <footer class="tk-footer js_bg_color" style="background-color: rgb(55, 149, 223);">
+                                <div class="tkf-content">
+                                    <p class="info">一票一人仅限乘坐 <span class="hl-no">K206</span></p>
+                                </div>
+                                <button class="btn btn-primary tk-btn text-center full-width js_ticket_check_btn" data-id="5df20f3ac900a710cf45dbc2">上车验票</button>
+                            </footer>
+                            <script>
+                                $(function() {
+                                    $('#hl-day').text(new Date().getMonth() + 1 + '月' + new Date().getDate() + '日');
+                                    if (new Date().getHours() < 12) {
+                                        $('#hl-time').text('08:00-10:00');
+                                        $('.hl-no').text('K205');
+                                    } else {
+                                        $('#hl-time').text('17:30-19:30');
+                                        $('.hl-no').text('K206');
+                                    }
+
+                                })
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="dialog-wrap" id="js_dialog_section">
+        <div class="overlay"></div>
+        <div class="dialog-content">
+            <div class="dialog">
+                <div class="dialog-bd clearfix">
+                    <h3 class="bd-tt"></h3>
+                    <div class="bd-table">
+                        <div class="bd-cell">
+                        </div>
+                        <p class="bd-txt"></p>
+                    </div>
+                </div>
+                <!-- ft--full ft-btn-->
+                <footer class="dialog-ft">
+                    <span class="ft-btn js_cancel">取消</span>
+                    <span class="ft-btn js_submit">确定</span>
+                </footer>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="toast-wrap" id="js_toast_section">
+        <div class="toast">
+            <i class="toast-icon "></i>
+
+            <p class="toast-txt"></p>
+        </div>
+    </section>
+
+    <section class="toast-wrap" id="js_loading_toast_section">
+        <div class="toast toast--loading has-close">
+            <svg class="icon-svg icon-loading">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/icons.svg#icon-loading"></use>
+            </svg>
+            <p class="toast-text">提交中...</p>
+
+        </div>
+    </section>
+
+
+    <section class="dialog-wrap" id="js_shifts_dialog">
+        <div class="overlay"></div>
+        <div class="dialog-content">
+            <div class="dialog white">
+                <div class="p-15 color-hint">
+                    <h3 class="text-center font-16">
+                        <span class="js_shift_title"></span>
+                        <svg class="icon-svg fxWH-25 fr mt-5 js_cancel_btn" style="position: absolute;right: 15px;">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/images/icons.svg#icon-close"></use>
+                        </svg>
+                    </h3>
+                    <div class="js_shift_content shift-list clearfix">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="dialog-wrap " id="js_red_packet_modal">
+        <div class="overlay"></div>
+        <div class="dialog-content" id="js_rpm_content">
+
+        </div>
+    </section>
+
+
+
+    <section class="dialog-wrap " id="js_share_hint_modal">
+        <div class="overlay"></div>
+        <div class="share-overlay">
+            <div class="js_share_content">
+                请点击这里发送给朋友,<br>或分享到朋友圈
+            </div>
+            <img class="share-arrow" src="http://resources.hollo.cn/20171025181256/images/icons/share_arrow.png">
+        </div>
+
+    </section>
+    <script id="js_red_style_1" type="text/html">
+        <div class="hl-red-packet-body width-p-100  ">
+            <i class="hl-rp-close-1 js_bonus_close_btn"></i>
+            <div class="hl-rp-bg-1">
+                <div class="hl-rp1-title">{{ content.data.title }}</div>
+                <div class="hl-rp1-content"> {{ content.data.description }}</div>
+                {{each display.buttons as button index}}
+                <div class="hl-rp1-btn js_bonus_click_btn" data-url="{{ button.jump_url }}" data-action="{{ button.action }}">{{ button.title }}</div>
+                {{/each}}
+            </div>
+        </div>
+    </script>
+
+
+    <script id="js_red_style_2" type="text/html">
+        <div class="hl-red-packet-body ">
+            <i class="hl-rp-close-2 js_bonus_close_btn"></i>
+            <p class="hl-rp-title color-white mt-50">{{ content.data.title }}</p>
+            <p class="hl-rp-sub-title color-white mt-20"> {{ content.data.description }}</p>
+            <img class="hlthp-img mt-20" src="http://resources.hollo.cn/20171025181256/images/red-packet/gift-2-img@2x.png">
+            <div class="hlthp-button-list mt-20">
+                {{each display.buttons as button index}}
+                <button class="hl-rp-btn-1 box-flex-1 js_bonus_click_btn" data-url="{{ button.jump_url }}" data-action="{{ button.action }}">{{ button.title }}</button>
+                {{/each}}
+            </div>
+        </div>
+    </script>
+
+
+
+    <script id="js_red_style_3" type="text/html">
+        <div class="hl-red-packet-body ">
+            <i class="hl-rp-close-2 js_bonus_close_btn"></i>
+            <p class="hl-rp-title color-white mt-50">{{ content.data.title }}</p>
+            <p class="hl-rp-sub-title color-white mt-20"> {{ content.data.description }}</p>
+            <img class="hl-rp-img pl-25 mt-20" width="80%" src="http://resources.hollo.cn/20171025181256/images/red-packet/gift-3-img@2x.png">
+            <div class="hlthp-button-list mt-20 display-box">
+                {{each display.buttons as button index}}
+                <button class="hl-rp-btn-1 box-flex-1 js_bonus_click_btn" data-url="{{ button.jump_url }}" data-action="{{ button.action }}">{{ button.title }}</button>
+                {{/each}}
+            </div>
+        </div>
+    </script>
+
+
+
+    <script id="js_red_style_4" type="text/html">
+        <div class="hl-red-packet-body bg-white ">
+            <i class="hl-rp-close-4 js_bonus_close_btn"></i>
+            <p class="hl-rp-title color-orange mt-50">{{ content.data.title }}</p>
+            <p class="hl-rp-sub-title color-orange mt-20"> {{ content.data.description }}</p>
+            <img class="hlthp-img" src="http://resources.hollo.cn/20171025181256/images/red-packet/gift-4-img@2x.png">
+            <div class="hlthp-button-list mt-10 display-box">
+                {{each display.buttons as button index}}
+                <button class="hlthp-button bg-orange border-none box-flex-1 ml-5 mr-5 js_bonus_click_btn" data-url="{{ button.jump_url }}" data-action="{{ button.action }}">{{ button.title }}</button>
+                {{/each}}
+            </div>
+        </div>
+    </script>
+
+
+
+    <script id="js_red_style_bonus" type="text/html">
+        <div class="hlthp-img-title ">
+            <i class="hl-rp-close-2  js_bonus_close_btn"></i>
+            <img src="http://resources.hollo.cn/20171025181256/images/red-packet/red_packet_3_body@2x.png">
+        </div>
+        <div class="hl-th-share-packet">
+            <img class="hlthp-img" src="http://resources.hollo.cn/20171025181256/images/red-packet/red_packet_3_header@2x.png">
+            <p class="hlthp-desc">{{ content.data.description }}</p>
+            <div class="hlthp-button-list">
+                <button class="hlthp-button js_bonus_share_btn">发红包</button>
+            </div>
+        </div>
+    </script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+        if (typeof wx != 'undefined') {
+            wx.config({
+                "debug": false,
+                "beta": false,
+                "appId": "wxda0556e3b4db9b0f",
+                "nonceStr": "zMKnWqQxow",
+                "timestamp": 1576144555,
+                "url": "http:\/\/wx.hollo.cn\/shuttle-list?v=1.1",
+                "signature": "eb404c6e851a2c1bb8d391d70b4504aefdae5fa8",
+                "jsApiList": ["onMenuShareTimeline", "onMenuShareAppMessage", "onMenuShareQQ", "onMenuShareWeibo", "onMenuShareQZone", "previewImage", "openLocation", "getLocation", "hideOptionMenu", "showOptionMenu", "hideMenuItems", "showMenuItems", "hideAllNonBaseMenuItem", "showAllNonBaseMenuItem", "closeWindow", "scanQRCode", "chooseWXPay"]
+            });
+            wx.error(function(res) {
+                // config信息验证失败会执行error函数，如签名过期导致验证失败，具体错误信息可以打开config的debug模式查看，也可以在返回的res参数中查看，对于SPA可以在这里更新签名
+                window.console.log("wx error data is ");
+                window.console.log(res);
+            });
+        } else {
+            console.log('wx load failed');
+        }
+    </script>
+
+
+    <script src="http://resources.hollo.cn/20171025181256/release/libs/require.js" data-main="http://resources.hollo.cn/20171025181256/main.js?v=20171102134115" type="text/javascript"></script>
+
+
+</body>
+
+</html>
